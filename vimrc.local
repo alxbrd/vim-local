@@ -1,0 +1,19 @@
+""set nofoldenable
+    set clipboard+=unnamed  " Yanks go on clipboard instead."
+    set nowrap
+    set textwidth=0
+
+"====[ Make the 81st column stand out ]====================
+    " OR ELSE just the 81st column of wide lines...
+    highlight ColorColumn ctermbg=magenta
+    call matchadd('ColorColumn', '\%81v', 100)
+
+"====[ Default color scheme set to solarized ]=============
+
+    colorscheme solarized " Set colorscheme
+
+"====[ Swap : and ; to make colon commands easier to type ]
+
+    nnoremap  ;  :
+    nnoremap  :  ;
+
