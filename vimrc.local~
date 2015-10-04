@@ -1,0 +1,14 @@
+""set nofoldenable
+    set clipboard+=unnamed  " Yanks go on clipboard instead."
+    set nowrap
+    set textwidth=0
+
+"====[ Default color scheme set to solarized ]====
+
+    colorscheme solarized " Set colorscheme
+
+"====[ Swap : and ; to make colon commands easier to type ]====
+
+    nnoremap  ;  :
+    nnoremap  :  ;
+
