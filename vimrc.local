@@ -1,12 +1,16 @@
-""set nofoldenable
-    set clipboard+=unnamed  " Yanks go on clipboard instead."
+"====[ Disable code folding ]==============================
+
+    set nofoldenable
+
+"====[ Yanks to go clipboard instead ]=====================
+
+    set clipboard+=unname
     set nowrap
     set textwidth=0
 
 "====[ Make the 81st column stand out ]====================
 
-    highlight ColorLongColumn ctermbg=magenta
-    call matchadd('ColorLongColumn', '\%81v', 100)
+    set colorcolumn=81
 
 "====[ Default color scheme set to solarized ]=============
 
@@ -14,6 +18,12 @@
 
 "====[ Swap : and ; to make colon commands easier to type ]
 
-    "nnoremap  ;  :
-    "nnoremap  :  ;
+    nnoremap  ;  :
+    nnoremap  :  ;
 
+"====[ Undo 1000 times ]===================================
+
+    set undodir=~/.vimundo
+    set undofile
+    set undolevels=1000 "maximum number of changes that can be undone
+    set undoreload=10000 "maximum number lines to save for undo on a buffer reload
