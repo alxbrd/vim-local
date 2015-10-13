@@ -21,9 +21,42 @@
     nnoremap  ;  :
     nnoremap  :  ;
 
-"====[ Undo 1000 times ]===================================
+"====[ Undo settings ]===================================
 
     set undodir=~/.vimundo
     set undofile
     set undolevels=1000 "maximum number of changes that can be undone
     set undoreload=10000 "maximum number lines to save for undo on a buffer reload
+
+"====[ Read a file that is modified from outside ]========
+
+    set autoread
+
+"====[ Fast saving ]======================================
+
+    nmap <leader>w :w!<cr>
+
+"====[ Toggle paste mode ]================================
+
+    map <leader>pp :setlocal paste!<cr>
+
+"====[ Linebreak on 500 characters ]======================
+
+    set lbr
+    set tw=500
+
+"====[ Auto indent ]======================================
+
+    set ai "Auto indent
+
+"====[ Smart indent ]======================================
+
+    set si "Smart indent
+
+"====[ Wrap lines ]========================================
+
+    set wrap "Wrap lines"
+
+"====[ Save files as sudo with :w!! ]======================
+
+    cmap w!! w !sudo tee > /dev/null %
