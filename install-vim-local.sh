@@ -16,7 +16,12 @@
 
 
 VIM_LOCAL_PATH="$HOME/.vim-local"
+VIM_UNDO_PATH="$HOME/.vimundo"
 
+if [ ! -e "$VIM_UNDO_PATH" ]; then
+    echo "Preparing .vimundo directory"
+    mkdir -p "$VIM_UNDO_PATH"
+fi
 
 if [ ! -e "$VIM_LOCAL_PATH" ]; then
     echo "Installing vim-local"
