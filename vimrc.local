@@ -48,10 +48,6 @@
 
     set ai "Auto indent
 
-"====[ Smart indent ]======================================
-
-    set si "Smart indent
-
 "====[ Wrap lines ]========================================
 
     set wrap "Wrap lines"
