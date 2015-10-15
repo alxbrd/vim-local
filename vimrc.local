@@ -26,14 +26,13 @@
 "====[ Swap : and ; to make colon commands easier to type ]
 
     nnoremap  ;  :
-    nnoremap  :  ;
 
 "====[ Undo settings ]===================================
 
     set undodir=~/.vimundo
     set undofile
-    set undolevels=1000 "maximum number of changes that can be undone
-    set undoreload=10000 "maximum number lines to save for undo on a buffer reload
+    set undolevels=1000 "max number of changes that can be undone
+    set undoreload=10000 "max number lines to save for undo on a buffer reload
 
 "====[ Read a file that is modified from outside ]========
 
@@ -56,10 +55,6 @@
 
     set ai "Auto indent
 
-"====[ Smart indent ]======================================
-
-    set si "Smart indent
-
 "====[ Wrap lines ]========================================
 
     set wrap "Wrap lines"
@@ -67,3 +62,4 @@
 "====[ Save files as sudo with :w!! ]======================
 
     cmap w!! w !sudo tee > /dev/null %
+
