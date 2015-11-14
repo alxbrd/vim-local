@@ -15,7 +15,7 @@
 "====[ Default color scheme set to solarized ]=============
 
     set background=dark
-    if has('gui_running') || $TERM == 'xterm-256color'
+    if has('gui_running') || $TERM =~ "256color"
       let g:solarized_termcolors=256
     else
       let g:solarized_termcolors=16
@@ -63,3 +63,6 @@
 
     cmap w!! w !sudo tee > /dev/null %
 
+"====[ Disable double escape to insert mode ]======================
+
+    inoremap <expr> <Esc> "<Esc>"
