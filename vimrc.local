@@ -4,7 +4,7 @@
 
 "====[ Yanks to go clipboard instead ]=====================
 
-    set clipboard+=unname
+    set clipboard+=unname " requires +X11 
     set nowrap
     set textwidth=0
 
