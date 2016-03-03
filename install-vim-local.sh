@@ -26,7 +26,7 @@ fi
 if [ ! -e "$VIM_LOCAL_PATH" ]; then
     echo "Installing vim-local"
     mkdir -p "$VIM_LOCAL_PATH"
-    git clone -b master https://github.com/alxbrd/vim-local.git "$VIM_LOCAL_PATH"
+    git clone -b master git@github.com:alxbrd/vim-local.git "$VIM_LOCAL_PATH"
 else
     echo "Updating vim-local"
     cd "$VIM_LOCAL_PATH" && git pull origin master
